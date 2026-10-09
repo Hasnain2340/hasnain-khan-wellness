@@ -1,0 +1,5 @@
+Project: HASNAIN KHAN — Mental Health Matters: Students' Wellness Hub
+Course: BIW10203 Web Application
+Semester: 1 2026/2027
+Theme: Mental Health Matters: Students' Wellness Hub
+Hosting target: GitHub Pages

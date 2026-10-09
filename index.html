@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mental Health Matters: a student-first wellness hub created by HASNAIN KHAN for the UTHM and FSKTM community." />
+  <title>Mental Health Matters | HASNAIN KHAN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Mental Health Matters home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span><strong>Mental Health</strong><small>matters</small></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#learn">Learn</a>
+        <a href="#reset">Reset</a>
+        <a href="#support">Support</a>
+        <a class="nav-cta" href="#check-in">Take a check-in <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero container section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse-dot"></span> Student wellness, without the pressure</p>
+        <h1>You are more than your <em>to-do list.</em></h1>
+        <p class="hero-lede">A calm corner for students to learn about mental health, reset between deadlines, and find support before things feel too heavy.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#check-in">Start a gentle check-in <span>↗</span></a>
+          <a class="text-link" href="#support">I need support now <span>→</span></a>
+        </div>
+        <div class="hero-byline"><span class="avatar">HK</span><span>Created with care by <strong>HASNAIN KHAN</strong><br /><small>BIW10203 Web Application · UTHM</small></span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Abstract illustration of a student taking a calm breath">
+        <div class="sun-disc"></div><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="art-note note-one">pause<br /><span>is productive</span></div>
+        <div class="art-note note-two">01 / breathe</div>
+        <div class="art-person"><div class="person-head"></div><div class="person-body"></div><div class="person-arm"></div></div>
+        <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="art-line"></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Wellness reminder"><div>NOTICE YOUR NEEDS <span>✳</span> ASK FOR SUPPORT <span>✳</span> TAKE ONE KIND STEP <span>✳</span> NOTICE YOUR NEEDS <span>✳</span></div></section>
+
+    <section class="section-pad container" id="learn">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 / understand what is happening</p><h2>Feelings are information,<br /><em>not a final answer.</em></h2></div><p class="heading-note">Mental health includes our emotional, psychological, and social well-being. Looking after it is part of looking after your whole student life.</p></div>
+      <div class="insight-grid">
+        <article class="insight-card card-lilac reveal"><span class="card-number">01</span><div class="icon-bubble">◌</div><h3>Stress is a signal</h3><p>A little stress can help you focus. Ongoing stress is a cue to pause, adjust your load, or talk to someone you trust.</p><a href="#resources">Read the signs <span>↗</span></a></article>
+        <article class="insight-card card-mint reveal"><span class="card-number">02</span><div class="icon-bubble">✦</div><h3>Small steps count</h3><p>Hydrating, sleeping, stepping outside, or sending one message can be a meaningful act of self-care on a difficult day.</p><a href="#reset">Try a reset <span>↗</span></a></article>
+        <article class="insight-card card-peach reveal"><span class="card-number">03</span><div class="icon-bubble">♡</div><h3>Support is strength</h3><p>You do not need a perfect explanation before asking for help. Early support can make the next step feel lighter.</p><a href="#support">Find support <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="reset-band" id="reset">
+      <div class="container reset-layout">
+        <div class="reset-copy reveal"><p class="eyebrow">02 / a 60-second reset</p><h2>Come back to<br /><em>this moment.</em></h2><p>Try a simple paced-breathing exercise. Inhale as the circle grows, exhale as it gently returns. There is nothing to perform.</p><button class="button button-light" id="breathing-start">Begin breathing <span>→</span></button></div>
+        <div class="breathing-card reveal"><div class="breathing-orbit"><div class="breathing-circle" id="breathing-circle"><span id="breathing-label">ready?</span></div></div><p class="breathing-status" id="breathing-status">Press begin when you are ready.</p><div class="breathing-progress"><span id="breathing-progress"></span></div></div>
+      </div>
+    </section>
+
+    <section class="section-pad container" id="check-in">
+      <div class="checkin-panel reveal"><div class="checkin-intro"><p class="eyebrow">03 / check in with yourself</p><h2>What do you need<br /><em>right now?</em></h2><p>This private, on-device check-in is not a diagnosis. It is a tiny pause to help you name a next step.</p><div class="privacy-note">◇ Nothing is saved or sent anywhere.</div></div><div class="checkin-quiz" id="checkin-quiz"><div class="quiz-progress"><span id="quiz-step">Question 1 of 4</span><div><span id="quiz-bar"></span></div></div><h3 id="question-text">How has your energy felt today?</h3><div class="answer-list" id="answer-list"></div><div class="quiz-result" id="quiz-result" hidden></div></div></div>
+    </section>
+
+    <section class="resources-section section-pad" id="resources">
+      <div class="container"><div class="section-heading reveal"><div><p class="eyebrow">04 / your toolkit</p><h2>Helpful things to<br /><em>come back to.</em></h2></div><p class="heading-note">Save the ideas that feel realistic for you. Wellness is not a productivity contest; it is a practice of noticing and responding.</p></div>
+        <div class="resource-toolbar reveal"><button class="filter-button active" data-filter="all">All tools</button><button class="filter-button" data-filter="body">Body</button><button class="filter-button" data-filter="mind">Mind</button><button class="filter-button" data-filter="connection">Connection</button></div>
+        <div class="resource-list">
+          <article class="resource-item reveal" data-category="body"><span class="resource-icon">01</span><div><p class="resource-type">Body / 5 minutes</p><h3>Reset your basics</h3><p>Drink water, unclench your jaw, roll your shoulders, and take three slower breaths. A cared-for body gives your mind more room.</p></div><span class="resource-arrow">↗</span></article>
+          <article class="resource-item reveal" data-category="mind"><span class="resource-icon">02</span><div><p class="resource-type">Mind / 10 minutes</p><h3>Make the next step smaller</h3><p>Write down everything on your mind, then circle only the one task that truly needs attention today.</p></div><span class="resource-arrow">↗</span></article>
+          <article class="resource-item reveal" data-category="connection"><span class="resource-icon">03</span><div><p class="resource-type">Connection / 2 minutes</p><h3>Send the honest text</h3><p>Try: “I am having a hard day. You do not have to fix it — could you just check in with me?”</p></div><span class="resource-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-section section-pad" id="support"><div class="container support-grid"><div class="support-copy reveal"><p class="eyebrow">05 / real support</p><h2>Reaching out is<br /><em>a brave action.</em></h2><p>If you are struggling, you deserve support from a trusted person or qualified professional. You do not have to wait until a crisis to talk.</p><div class="support-links"><a href="https://fsktm.uthm.edu.my/" target="_blank" rel="noreferrer">FSKTM UTHM <span>↗</span></a><a href="https://www.uthm.edu.my/en/" target="_blank" rel="noreferrer">UTHM official portal <span>↗</span></a></div></div><div class="urgent-card reveal"><div class="urgent-top"><span class="urgent-label">Need help now?</span><span class="urgent-symbol">↗</span></div><h3>Talk to someone<br />today.</h3><p>In Malaysia, these services can provide immediate emotional support. If there is immediate danger, call emergency services.</p><div class="helpline"><strong>Talian HEAL</strong><a href="tel:15555">15555</a><small>Tele-counselling support</small></div><div class="helpline"><strong>Befrienders KL</strong><a href="tel:0376272929">03 7627 2929</a><small>Free, confidential emotional support</small></div><a class="button button-dark full-button" href="https://findahelpline.com/countries/my" target="_blank" rel="noreferrer">More Malaysia helplines <span>↗</span></a></div></div></section>
+
+    <section class="faq-section section-pad container"><div class="faq-heading reveal"><p class="eyebrow">A few reminders</p><h2>Keep this close.</h2></div><div class="faq-list"><details class="faq-item reveal" open><summary>When should I ask for professional help? <span>+</span></summary><p>Consider reaching out when distressing changes last around two weeks or more, affect sleep, appetite, concentration, enjoyment, or your ability to complete usual tasks. You can also ask earlier if something feels difficult to carry alone.</p></details><details class="faq-item reveal"><summary>How can I support a friend? <span>+</span></summary><p>Listen without rushing to fix, ask what kind of support they want, encourage professional help when needed, and take immediate safety concerns seriously. You can care deeply without becoming their only support.</p></details><details class="faq-item reveal"><summary>Is this website a diagnosis or counselling service? <span>+</span></summary><p>No. This is an educational student project and a starting point for reflection. It cannot diagnose, treat, or replace a qualified mental health professional.</p></details></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><div><a class="brand footer-brand" href="#top"><span class="brand-mark">M</span><span><strong>Mental Health</strong><small>matters</small></span></a><p class="footer-tagline">A softer place to start.<br />You matter beyond your grades.</p></div><div class="footer-credit"><p>Website project by</p><strong>HASNAIN KHAN</strong><small>BIW10203 Web Application · Semester 1 2026/2027</small></div><div class="logo-lockup"><img src="assets/uthm-logo.png" alt="Universiti Tun Hussein Onn Malaysia logo" /><img class="fsktm-logo" src="assets/fsktm-logo.png" alt="Faculty of Computer Science and Information Technology logo" /></div></div><div class="container footer-bottom"><span>© <span id="current-year"></span> HASNAIN KHAN. Educational project.</span><span>Sources: NIMH · Find A Helpline · FSKTM UTHM</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
